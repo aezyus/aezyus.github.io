@@ -40,6 +40,11 @@ export default defineConfig({
       href: "/friends/",
       icon: "i-ri-link",
     },
+    {
+      text: "动态",
+      href: "/moments/",
+      icon: "i-ri-chat-quote-line",
+    },
   ],
   brand: {
     title: "ShokaX",

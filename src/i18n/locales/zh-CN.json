@@ -120,5 +120,10 @@
     "decrypting": "正在解密内容...",
     "error": "密码错误，请重试",
     "passwordRequired": "请输入密码"
+  },
+  "moments": {
+    "title": "动态",
+    "noContent": "暂无动态",
+    "publishedAt": "发布于"
   }
 }

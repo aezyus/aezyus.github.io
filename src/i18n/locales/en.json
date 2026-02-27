@@ -120,5 +120,10 @@
     "decrypting": "Decrypting content...",
     "error": "Incorrect password, please try again",
     "passwordRequired": "Please enter password"
+  },
+  "moments": {
+    "title": "Moments",
+    "noContent": "No moments available",
+    "publishedAt": "Published on"
   }
 }
