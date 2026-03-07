@@ -160,7 +160,7 @@ export default defineConfig({
     },
   },
   layout: {
-    mode: "three-column",
+    mode: "two-column",
     rightSidebar: {
       order: ["announcement", "search", "calendar", "recentMoments", "randomPosts", "tagCloud"],
       announcement: true,
