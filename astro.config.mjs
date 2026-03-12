@@ -40,7 +40,7 @@ import PlayformInline from "@playform/inline";
 // https://astro.build/config
 export default defineConfig({
   site: "https://preview.astro.kaitaku.xyz",
-  trailingSlash: "always",
+  trailingSlash: "ignore",
   build: {
     format: "directory",
   },

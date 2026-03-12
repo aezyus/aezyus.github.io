@@ -12,7 +12,7 @@ export async function getStaticPaths() {
   const tagSet = new Set<string>();
   publishedPosts.forEach((post) => {
     const tags = post.data.tags || [];
-    tags.forEach((tag) => tagSet.add(tag));
+    tags.forEach((tag: string) => tagSet.add(tag));
   });
 
   // Generate paths for each tag

@@ -94,7 +94,7 @@ const rightSidebarPosts = shouldComputeRightSidebarRandomPosts
 const rightSidebarTagCloud = shouldComputeRightSidebarTagCloud
   ? (() => {
       const rightSidebarTagCounts = posts.reduce((acc, post) => {
-        post.data.tags?.forEach((tag) => {
+        post.data.tags?.forEach((tag: string) => {
           acc.set(tag, (acc.get(tag) || 0) + 1);
         });
 
@@ -122,12 +122,12 @@ const rightSidebarTagCloud = shouldComputeRightSidebarTagCloud
 
 const siteState = {
   categories: allPosts.reduce((acc, post) => {
-    post.data.categories?.forEach((category) => acc.add(category));
+    post.data.categories?.forEach((category: string) => acc.add(category));
     return acc;
   }, new Set()).size,
   posts: posts.length,
   tags: allPosts.reduce((acc, post) => {
-    post.data.tags?.forEach((tag) => acc.add(tag));
+    post.data.tags?.forEach((tag: string) => acc.add(tag));
     return acc;
   }, new Set()).size,
 };
@@ -156,7 +156,6 @@ import SearchPage from "@/components/search/SearchPage.svelte";
       client:load
       name={siteName}
       navLinks={navLinks}
-      clickToggleCallback={() => void 0}
     />
     <SearchPage client:idle selector="#search" />
     <Loading />

@@ -19,7 +19,7 @@ const tagMap = new Map<string, number>();
 
 publishedPosts.forEach((post) => {
   const tags = post.data.tags || [];
-  tags.forEach((tag) => {
+  tags.forEach((tag: string) => {
     tagMap.set(tag, (tagMap.get(tag) || 0) + 1);
   });
 });
